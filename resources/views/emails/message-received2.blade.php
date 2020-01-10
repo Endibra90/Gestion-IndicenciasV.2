@@ -1,0 +1,1 @@
+<h2>El administrador ha editado el estado de la incidencia</h2>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="sFxhvb8Mtd60NgdHCq8cWq3IidMhGLSiJyPivn5R">
+
+    <title>Incidencias Plaiaundi</title>
+
+    <!-- Scripts -->
+    <script src="Incidencias%20Plaiaundi_files/app_002.html" defer="defer"></script>
+    <link rel="stylesheet" href="Incidencias%20Plaiaundi_files/bootstrap.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="Incidencias%20Plaiaundi_files/jquery-3.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="Incidencias%20Plaiaundi_files/popper.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="Incidencias%20Plaiaundi_files/bootstrap.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="http://fonts.gstatic.com/">
+    <link href="Incidencias%20Plaiaundi_files/css.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="Incidencias%20Plaiaundi_files/app.html" rel="stylesheet">
+    <style>
+        body{
+                background-color:#a7ffeb;
+            }
+        </style>
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="http://10.10.17.214:8000/">
+                    Incidencias Plaiaundi
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mr-auto">
+
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Authentication Links -->
+                                                    <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre="">
+                                    Endika Hernandez Santamaria<img src="Incidencias%20Plaiaundi_files/AAuE7mCiZggN0LkuHBdCnX1T64bfwTGL8H8X8da0jSvC_Q.jpeg" style="margin-left:1%;border-radius:30px;" width="30px"><span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="http://10.10.17.214:8000/logout" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                                     <iframe id="logoutframe" src="https://accounts.google.com/logout" style="display: none"></iframe>
+                                        Logout
+                                    </a>
+
+                                    <form id="logout-form" action="http://10.10.17.214:8000/logout" method="POST" style="display: none;">
+                                        <input type="hidden" name="_token" value="sFxhvb8Mtd60NgdHCq8cWq3IidMhGLSiJyPivn5R">                                    </form>
+                                </div>
+                            </li>
+                                            </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="py-4">
+            
+<style>
+body{
+    background-color:#a7ffeb;
+}
+</style>
+ 
+    <link rel="stylesheet" href="Incidencias%20Plaiaundi_files/materialize.css"><link href="Incidencias%20Plaiaundi_files/icon.css" rel="stylesheet">
+
+
+    <script src="Incidencias%20Plaiaundi_files/materialize.js"></script><div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+                <h3 class="flow-text" style="margin-left:36%;color:#00bfa5;">Listado de incidencias </h3>
+                                        <table class="highlight">
+                        <thead>
+                            <tr class="teal accent-4">
+                            <th>Fecha</th>
+                            <th>Clase</th>
+                            <th>Equipo</th>
+                            <th>Descripción</th>
+                            <th>Hora</th>
+                            <th>ComentarioAdmin</th>
+                            <th>Estado</th>
+                            <th>Editar</th>
+                            <th>Borrar</th>
+                            <th>Imagen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                
+                        <tr class="teal accent-3">
+                            <td>2020-01-10</td>
+                            <td>107</td>
+                            <td>HZ123456</td>
+                            <td>No se enciende la CPU/ CPU ez da pizten</td>
+                            <td>19:40</td>
+                            <td></td>
+                            <td>Recibida</td>
+                            <td><a href="http://10.10.17.214:8000/modificarinci/3"><img src="Incidencias%20Plaiaundi_files/lapiz.png" style="cursor:pointer;" width="50" height="50"></a></td>
+                            <td><a href="http://10.10.17.214:8000/eliminarinci/3"><img src="Incidencias%20Plaiaundi_files/basura.png" style="cursor:pointer;" width="50" height="50"></a></td>
+                            <td><img src="Incidencias%20Plaiaundi_files/fh2nJAlW9jy3nHZLi1CitUIvq35Et8PLlbsWat2n.jpeg" width="100px"></td>
+                        </tr>
+                        
+                                                
+                        <tr class="teal accent-3">
+                            <td>2020-01-15</td>
+                            <td>107</td>
+                            <td>HZ123456</td>
+                            <td>No se enciende la CPU/ CPU ez da pizten</td>
+                            <td>19:40</td>
+                            <td></td>
+                            <td>Recibida</td>
+                            <td><a href="http://10.10.17.214:8000/modificarinci/8"><img src="Incidencias%20Plaiaundi_files/lapiz.png" style="cursor:pointer;" width="50" height="50"></a></td>
+                            <td><a href="http://10.10.17.214:8000/eliminarinci/8"><img src="Incidencias%20Plaiaundi_files/basura.png" style="cursor:pointer;" width="50" height="50"></a></td>
+                            <td><img src="Incidencias%20Plaiaundi_files/nqtjEGrd7KsmBNBIKmykSoITVch9rkyzNpH6g4qC.jpeg" width="100px"></td>
+                        </tr>
+                        
+                                                
+                        <tr class="teal accent-3">
+                            <td>2020-01-17</td>
+                            <td>107</td>
+                            <td>HZ123456</td>
+                            <td>No se enciende la CPU/ CPU ez da pizten</td>
+                            <td>19:40</td>
+                            <td></td>
+                            <td>Recibida</td>
+                            <td><a href="http://10.10.17.214:8000/modificarinci/9"><img src="Incidencias%20Plaiaundi_files/lapiz.png" style="cursor:pointer;" width="50" height="50"></a></td>
+                            <td><a href="http://10.10.17.214:8000/eliminarinci/9"><img src="Incidencias%20Plaiaundi_files/basura.png" style="cursor:pointer;" width="50" height="50"></a></td>
+                            <td><img src="Incidencias%20Plaiaundi_files/phpsZUvWR.html" width="100px"></td>
+                        </tr>
+                        
+                                                
+                        <tr class="teal accent-3">
+                            <td>2020-01-09</td>
+                            <td>107</td>
+                            <td>HZ123456</td>
+                            <td>No se enciende la CPU/ CPU ez da pizten</td>
+                            <td>19:40</td>
+                            <td></td>
+                            <td>Recibida</td>
+                            <td><a href="http://10.10.17.214:8000/modificarinci/10"><img src="Incidencias%20Plaiaundi_files/lapiz.png" style="cursor:pointer;" width="50" height="50"></a></td>
+                            <td><a href="http://10.10.17.214:8000/eliminarinci/10"><img src="Incidencias%20Plaiaundi_files/basura.png" style="cursor:pointer;" width="50" height="50"></a></td>
+                            <td><img src="Incidencias%20Plaiaundi_files/vpLokYScIbbZjCMTel0O1OnfejjBQX6A1GBLRgje.html" width="100px"></td>
+                        </tr>
+                        
+                                                
+                        <tr class="teal accent-3">
+                            <td>2020-01-08</td>
+                            <td>107</td>
+                            <td>HZ123456</td>
+                            <td>No se enciende la CPU/ CPU ez da pizten</td>
+                            <td>19:40</td>
+                            <td></td>
+                            <td>Recibida</td>
+                            <td><a href="http://10.10.17.214:8000/modificarinci/11"><img src="Incidencias%20Plaiaundi_files/lapiz.png" style="cursor:pointer;" width="50" height="50"></a></td>
+                            <td><a href="http://10.10.17.214:8000/eliminarinci/11"><img src="Incidencias%20Plaiaundi_files/basura.png" style="cursor:pointer;" width="50" height="50"></a></td>
+                            <td><img src="Incidencias%20Plaiaundi_files/phpXLhNiB.html" width="100px"></td>
+                        </tr>
+                        
+                                                
+                        <tr class="teal accent-3">
+                            <td>2020-01-22</td>
+                            <td>107</td>
+                            <td>HZ123456</td>
+                            <td>No se enciende la CPU/ CPU ez da pizten</td>
+                            <td>19:40</td>
+                            <td></td>
+                            <td>Recibida</td>
+                            <td><a href="http://10.10.17.214:8000/modificarinci/12"><img src="Incidencias%20Plaiaundi_files/lapiz.png" style="cursor:pointer;" width="50" height="50"></a></td>
+                            <td><a href="http://10.10.17.214:8000/eliminarinci/12"><img src="Incidencias%20Plaiaundi_files/basura.png" style="cursor:pointer;" width="50" height="50"></a></td>
+                            <td><img src="Incidencias%20Plaiaundi_files/QXc19qOcX5nMtwGTCFqpa0Elfx3vjXicIQW61oJL.html" width="100px"></td>
+                        </tr>
+                        
+                         
+                    </tbody>    
+                    </table>
+                    <br><br>
+                    <div style="background-color:#00bfa5;">
+                    <a href="http://10.10.17.214:8000/crearinci" style="text-decoration:none;color:black;"><img src="Incidencias%20Plaiaundi_files/Aadir.png" style="cursor:pointer;" width="50" height="50">Añadir nueva incidencia
+                    </a></div><a href="http://10.10.17.214:8000/crearinci" style="text-decoration:none;color:black;">
+                </a></div><a href="http://10.10.17.214:8000/crearinci" style="text-decoration:none;color:black;">
+            </a></div><a href="http://10.10.17.214:8000/crearinci" style="text-decoration:none;color:black;">
+        </a></div><a href="http://10.10.17.214:8000/crearinci" style="text-decoration:none;color:black;">
+    </a></main></div><a href="http://10.10.17.214:8000/crearinci" style="text-decoration:none;color:black;">
+
+
+
+        
+    
+
+
+</a></body></html>
