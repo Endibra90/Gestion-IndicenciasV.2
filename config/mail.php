@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => 'endika.ph99@gmail.com',
-        'name' => 'Endika',
+        'address' => '????',
+        'name' => '????',
     ],
 
     /*
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => 'endika.ph99@gmail.com',
+    'username' => '????',
 
-    'password' => 'gariko13',
+    'password' => '????',
 
     /*
     |--------------------------------------------------------------------------
