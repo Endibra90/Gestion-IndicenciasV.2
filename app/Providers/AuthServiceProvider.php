@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Providers;
-
+use App\Policies\IncidenciasPolicy;
+use App\User;
+use App\Incidencia;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;
 
@@ -13,6 +15,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
+        Incidencia::class => IncidenciasPolicy::class,
         // 'App\Model' => 'App\Policies\ModelPolicy',
     ];
 

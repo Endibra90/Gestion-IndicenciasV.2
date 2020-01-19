@@ -77,7 +77,7 @@ return [
         'array' => 'The :attribute must not have more than :value items.',
     ],
     'max' => [
-        'numeric' => 'The :attribute may not be greater than :max.',
+        'numeric' => 'La :attribute no debe ser mas grande que :max.',
         'file' => 'El :attribute no debe ser mas grande que :max kilobytes.',
         'string' => 'La :attribute tiene que tener como maximo :max caracteres.',
         'array' => 'The :attribute may not have more than :max items.',
@@ -85,7 +85,7 @@ return [
     'mimes' => 'El :attribute debe ser tipo: :values.',
     'mimetypes' => 'El :attribute debe ser tipo: :values.',
     'min' => [
-        'numeric' => 'The :attribute must be at least :min.',
+        'numeric' => 'La :attribute debe ser :min como minimo.',
         'file' => 'El :attribute no debe ser mas pequeño que :min kilobytes.',
         'string' => 'La :attribute tiene que tener como minimo :min caracteres.',
         'array' => 'The :attribute must have at least :min items.',

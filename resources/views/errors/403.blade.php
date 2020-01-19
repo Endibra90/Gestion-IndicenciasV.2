@@ -1,3 +1,4 @@
+@extends('errors::layout')
 <html>
     <head>
             <style>
@@ -10,9 +11,7 @@
     </head>
 <body>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<h2>Necesitas permisos</h2>
-<p>Cambia a una cuenta con permiso.(plaiaundi.net)</p>
-<p>Has iniciado sesión como<strong> {{$email}}</strong></p>
+<h2>Necesitas permisos compi</h2>
 <a class="waves-effect waves-teal btn-flat" href = "http://192.168.1.54.xip.io:8000/"/>Volver al home<i class="material-icons left">chevron_left</i></a>
 
 <iframe id="logoutframe" src="https://accounts.google.com/logout" style="display: none"></iframe>

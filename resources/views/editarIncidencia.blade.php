@@ -27,10 +27,10 @@ td{
                     @foreach ($datos as $dato)
                     <form action="/modificarinciPost/{{$dato->id}}" method="POST">
                         @csrf
-                        <p>Fecha: <input type="date" name="fecha" size="40" value="{{$dato->fecha}}"></p>
-                        <p>Clase: <input type="text" name="clase" size="40" value="{{$dato->clase}}"></p>
-                        <p>Hora: <input type="text" name="hora" size="40" value="{{$dato->hora}}"></p>
-                        <p>Equipo: <input type="text" name="equipo" size="40" value="{{$dato->equipo}}"></p>
+                        <p>Fecha: <input type="date" name="fecha" size="40" value="{{$dato->fecha}}" class="form-control @error('fecha') is-invalid @enderror" value="{{ old('fecha') }}" required autocomplete="fecha" autofocus></p>
+                        <p>Clase: <input type="text" name="clase" size="40" value="{{$dato->clase}}"class="form-control @error('clase') is-invalid @enderror" value="{{ old('clase') }}" required autocomplete="clase" autofocus></p>
+                        <p>Hora: <input type="text" name="hora" size="40" value="{{$dato->hora}}" class="form-control @error('hora') is-invalid @enderror" value="{{ old('hora') }}" required autocomplete="hora" autofocus></p>
+                        <p>Equipo: <input type="text" name="equipo" size="40" value="{{$dato->equipo}}" class="form-control @error('equipo') is-invalid @enderror" value="{{ old('equipo') }}" required autocomplete="equipo" autofocus></p>
                         <div class="input-field">
                             <select name="descripcion" onchange="if(this.value=='Otro'){document.getElementById('otro').disabled = false} else {document.getElementById('otro').disabled = true}">
                                 <option selected>{{$dato->descripcion}}</option>
@@ -46,7 +46,7 @@ td{
                                 <option value="Otro">Otro/Beste bat</option>
                             </p></select>
                         </div>
-                        <p>Otro: <input type="text" name="otro" size="40" value="{{$dato->otro}}" id="otro" disabled></p>
+                        <p>Otro: <input type="text" name="otro" size="40" value="{{$dato->otro}}" id="otro" disabled class="form-control @error('otro') is-invalid @enderror" value="{{ old('otro') }}" required autocomplete="otro" autofocus></p>
                         <p>
                             <button class="btn waves-effect waves-light" type="submit" value="Enviar" style="margin-left:86%">Enviar<i class="material-icons right">send</i>
                             </button>

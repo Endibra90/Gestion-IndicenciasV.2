@@ -10,7 +10,7 @@ body{
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script><div class="container">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <div class="row justify-content-center">
         <div class="col-md-8">
                 <h3 class="flow-text" style="margin-left:36%;color:#00bfa5;">Listado de incidencias </h3>
@@ -59,9 +59,6 @@ body{
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
 </body>
 </html>
 @endsection

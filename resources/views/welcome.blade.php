@@ -72,7 +72,7 @@
                         <a href="{{ url('/home') }}"><img src="{{ Auth::user()->avatar }}" width="50px" style="margin-left:1%;border-radius:30px;"></a>
                     @else
                         <a href="{{ url('auth/google') }}"><img src="google2.png" width="150"></a>
-                        <iframe id="logoutframe" src="https://accounts.google.com/logout" style="display: none"></iframe>
+                        <iframe id="logoutframe" src="https://accounts.google.com/logout" style="display:none"></iframe>
                     @endauth
                 </div>
             @endif
