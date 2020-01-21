@@ -32,7 +32,7 @@ return [
     'google' => [
         'client_id' => '197039423451-2dtbl3feh9fan7or80jj4j4asegteqdo.apps.googleusercontent.com',
         'client_secret' => '4YakXCg5o2LiDCTT-QOumP7n',
-        'redirect' => 'http://localhost:8000/callback',
+        'redirect' =>'http://10.10.17.214.xip.io:8000/callback',
     ],
 
 ];

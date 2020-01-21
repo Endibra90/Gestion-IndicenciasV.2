@@ -87,6 +87,7 @@ class HomeController extends Controller
     }
     public function eliminarInci($id){//Funcion que elimina una incidencia
         $user = Incidencias::find($id);
+        $this->authorize('permiso',$user);
         $user->delete();
         return redirect('/home');
     }
@@ -106,7 +107,14 @@ class HomeController extends Controller
                 return view('modificarEstado')->with('datos',$datos);
             }
             else{
+                if($request->input('descripcion')!="Otro"){
+                    $otro="";
+                }
+                else{
+                    $otro=$request->input('otro');
+                }    
             $datos = Incidencias::find($id);
+            $this->authorize('permiso',$datos);
             $datos->fecha = $request->input('fecha');//request de los datos del formulario
             $datos->clase = $request->input('clase');
             $datos->equipo = $request->input('equipo');
@@ -143,6 +151,12 @@ class HomeController extends Controller
                 return view('crearIncidencia');
             }
             else{
+                if($request->input('descripcion')!="Otro"){
+                    $otro="";
+                }
+                else{
+                    $otro=$request->input('otro');
+                }    
                 $newUser = Incidencias::create([
                     'fecha' =>$request->input('fecha'),//request de los datos del formulario
                     'clase' =>$request->input('clase'),
@@ -151,7 +165,7 @@ class HomeController extends Controller
                     'hora'=>$request->input('hora'),
                     'estado'=>'Recibida',
                     'email'=>auth::user()->email,
-                    'otro'=>$request->input('otro'),
+                    'otro'=>$otro,
                     'comentario'=>'',
                     'archivo'=>$archivo->store(''),
                     $archivo->store('public'),

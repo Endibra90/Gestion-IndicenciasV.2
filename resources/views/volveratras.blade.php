@@ -13,7 +13,7 @@
 <h2>Necesitas permisos</h2>
 <p>Cambia a una cuenta con permiso.(plaiaundi.net)</p>
 <p>Has iniciado sesión como<strong> {{$email}}</strong></p>
-<a class="waves-effect waves-teal btn-flat" href = "http://192.168.1.54.xip.io:8000/"/>Volver al home<i class="material-icons left">chevron_left</i></a>
+<a class="waves-effect waves-teal btn-flat" href = "http://10.10.17.214.xip.io:8000/"/>Volver al home<i class="material-icons left">chevron_left</i></a>
 
 <iframe id="logoutframe" src="https://accounts.google.com/logout" style="display: none"></iframe>
 <img src="candado.png" style="position:absolute;left:40%;top:2%;" width="130" height="130">
