@@ -52,7 +52,7 @@ class LoginController extends Controller
             $user = Socialite::driver('google')->stateless()->user();
             $finduser = User::where('google_id', $user->id)->first();
             $emailA=$user->email;
-            if(explode("@", $user->email)[1] !== 'plaiaundi.net'){//Comprobar que es de plaiaundi
+            if((explode("@", $user->email)[1] !== 'plaiaundi.net') or (explode("@", $user->email)[1] !== 'plaiaundi.com')){//Comprobar que es de plaiaundi
                 return view('volveratras')->with('email',$emailA);
             }
             
